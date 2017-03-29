@@ -9,4 +9,4 @@ import { addTodo, deleteTodo, toggleTodo, editTodo } from './actions';
 
 const store = createStore(reducer, todos);
 
-ReactDOM.render(<App initialData={todos} />, document.getElementById('root'));
+ReactDOM.render(<App store={store} />, document.getElementById('root'));
