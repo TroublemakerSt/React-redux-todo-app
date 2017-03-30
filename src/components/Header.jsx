@@ -3,9 +3,7 @@ import React from 'react';
 import Stats from './stats';
 import Stopwatch from './stopwatch';
 
-function Header(props) {
-  const todos = props.store.getState();
-
+function Header({ todos }) {
   return (
     <header>
       <Stats todos={todos} />

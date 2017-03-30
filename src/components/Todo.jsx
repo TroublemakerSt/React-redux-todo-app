@@ -29,7 +29,7 @@ class Todo extends React.Component {
     const title = this.refs.title.value;
 
     this.props.onEdit(this.props.id, title);
-    this.setState({editing: false});
+    this.setState({ editing: false });
   }
 
   handleDelete() {
@@ -41,7 +41,7 @@ class Todo extends React.Component {
   }
 
   handleEdit() {
-    this.setState({editing: true});
+    this.setState({ editing: true });
   }
 
   renderDisplay() {
