@@ -1,9 +1,15 @@
 {
   "name": "react-redux-todo-app",
-  "version": "0.5.0",
+  "version": "0.7.0",
   "scripts": {
     "start": "webpack-dev-server --inline --hot --content-base ./public",
     "build": "webpack -p"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
   },
   "dependencies": {
     "react": "15.4.2",
