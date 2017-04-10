@@ -7,6 +7,7 @@ import { deleteTodo, toggleTodo, editTodo } from '../actions';
 function mapStateToProps(state) {
   return {
     todos: getFilteredTodos(state),
+    loading: state.loading,
   };
 }
 

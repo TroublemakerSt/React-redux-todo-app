@@ -5,8 +5,9 @@ import { Provider } from 'react-redux';
 import store from './store';
 import App from './App';
 import { handleError } from './actions';
-import { getTodos } from './actions';
+import { requestTodos, getTodos } from './actions';
 
+store.dispatch(requestTodos());
 store.dispatch(getTodos());
 
 ReactDOM.render(

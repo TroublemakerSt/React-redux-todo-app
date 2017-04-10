@@ -22,5 +22,6 @@
       }
   ],
   "filter": "ALL",
-  "error": null
+  "error": null,
+  "loading": false,
 }
