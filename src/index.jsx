@@ -7,9 +7,7 @@ import App from './App';
 import { handleError } from './actions';
 import { getTodos } from './actions';
 
-fetch('api/todos')
-  .then(response => response.json())
-  .then(todos => store.dispatch(getTodos(todos)));
+store.dispatch(getTodos());
 
 ReactDOM.render(
   <Provider store={store}>
