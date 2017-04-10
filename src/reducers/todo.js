@@ -30,6 +30,7 @@ function todoReducer(state = {}, action) {
 }
 
 export default function reducer(state = [], action) {
+  console.log('todoReducer.state', state);
   switch (action.type) {
     case ADD_TODO:
       return [...state, todoReducer(undefined, action)];
