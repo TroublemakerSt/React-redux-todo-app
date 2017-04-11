@@ -7,17 +7,19 @@ export const EDIT_TODO = 'EDIT_TODO';
 
 let nextId = 5;
 
-export function getTodos(dispatch) {
-  dispatch({
-    type: REQUEST_TODOS,
-  });
+export function getTodos() {
+  return dispatch => {
+    dispatch({
+      type: REQUEST_TODOS,
+    });
 
-  return fetch('api/todos')
-    .then(response => response.json())
-    .then(todos => dispatch({
-    type: GET_TODOS,
-    todos,
-  }));
+    return fetch('api/todos')
+      .then(response => response.json())
+      .then(todos => dispatch({
+      type: GET_TODOS,
+      todos,
+    }));
+  };
 }
 
 export function addTodo(title) {
