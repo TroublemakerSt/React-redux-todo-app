@@ -53,6 +53,6 @@ export function editTodo(id, title) {
     .then(response => response.data)
     .then(todo => ({
       type: EDIT_TODO,
-      todo
+      todo,
     }));
 }
